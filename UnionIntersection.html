@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <script>
+        //Union of two sorted arrays
+       let arr1=[1,2,3,4,5];
+       let arr2=[4,5,6,7,8];
+        let i=0;
+        let j=0;
+       let y=[];
+        while(i<arr1.length && j<arr2.length){
+        if(arr1[i]<arr2[j]){
+           y.push(arr1[i])  
+           i++                             
+         }
+        else if(arr1[i]>arr2[j]){
+         y.push(arr2[j])
+         j++
+        }
+        else{
+            y.push(arr1[i])
+            i++
+            j++
+        }
+    }
+    while(i<arr1.length){
+        y.push(arr1[i])
+        i++
+    }
+    while(j<arr2.length){
+        y.push(arr2[j])
+        j++
+    }
+    console.log(y)
+    document.write(y)
+
+    </script> -->
+    <!-- <script>
+        function y(arr1,arr2){
+        let i=0;
+        let j=0;
+       let union=[];
+        while(i<arr1.length && j<arr2.length){
+        if(arr1[i]<arr2[j]){
+           union.push(arr1[i])  
+           i++                             //push (it will add a new element to the existing array at last)-----------
+         }
+        else if(arr1[i]>arr2[j]){
+         union.push(arr2[j])
+         j++
+        }
+        else{
+            union.push(arr1[i])
+            i++
+            j++
+        }
+    }
+    while(i<arr1.length){
+        union.push(arr1[i])
+        i++
+    }
+    while(j<arr2.length){
+        union.push(arr2[j])
+        j++
+    }
+    return union
+}
+y([1,2,3,4,5],[4,5,6,7,8])
+  console.log(y([1,2,3,4,5],[4,5,6,7,8]))
+    </script> -->
+
+    <script>
+        //Intersection of two sorted arrays
+        
+        let arr1=[1,2,3,4,5];
+       let arr2=[3,4,5,6,7];
+       let i=0;
+       let j=0;
+       intersection=[];
+       while(i<arr1.length && j< arr2.length){
+        
+        if(arr1[i]<arr2[j]){
+            i++
+            
+        }
+        else if (arr1[i]>arr2[j]){
+            
+            j++
+        }
+        else{
+            intersection.push(arr1[i])
+            i++
+            j++
+        }
+   
+       }
+       console.log(intersection)
+
+    </script>
+</body>
+</html>
